@@ -1,0 +1,48 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.home___header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.home___header a {
+    margin-right: 20px;
+    /* to remove underline we use inherit */
+    text-decoration: inherit;  
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 15px;
+}
+
+.home___header a:hover {
+    text-decoration: underline;
+}
+
+.home__headerRight {
+    display: flex;
+    align-items: center;
+    min-width: 13vw;
+    justify-content: space-between;
+}
+
+.home__headerRight > .MuiSvgIcon-root {
+    margin-right: 20px;
+}
+
+.home___body {
+    /* to make it take thee majority of the space and make its size cover remaining space */
+    flex: 1;
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+}
+
+.home___body > img {
+    object-fit: contain;
+    height: 100px;
+}
